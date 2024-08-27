@@ -45,13 +45,13 @@ fruits = ["banana", "apple", "melon", "apple"]
 
 
 ## Conditional Methods ------------------------------------
-# conditions is an array pairs of expression and value
+# conditions is an array of any kind of expressions
 conditions = [
   1 == 2 and 'inequal',
-  3 < 0 and 'this is wrong',
+  3 < 0, # pairs are optional
   1 + 1 and 'no more elseifs'
 ]
-# Whence feed into ors, it shall return the first truthy pair
+# Whence feed into ors, it shall return the first true-ish expression
 # print(_.ors(conditions)) # get 'no more elseif'
 
 # ands function shall return the last one in an array
